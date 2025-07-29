@@ -17,8 +17,6 @@ class ScreenHome extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               child: Navbar(),
             ),
-            Text("data"),
-            Text("data"),
           ],
         ),
       ),
