@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-
 class DesignSystem {
   DesignSystem._();
   static const Color darkTeal = Color(0xff004443);
