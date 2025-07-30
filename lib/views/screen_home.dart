@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/components/hero.dart';
 import 'package:flutter_portfolio/components/navbar.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
 
@@ -16,6 +17,10 @@ class ScreenHome extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(24),
               child: Navbar(),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(24),
+              child: HeroComp(),
             ),
           ],
         ),
