@@ -81,7 +81,7 @@ class Navbar extends StatelessWidget {
                       width: 150,
                       height: 100,
                       decoration: BoxDecoration(
-                        color: DesignSystem.whiteteal,
+                        color: DesignSystem.whiteTeal,
                       ),
                       child: Center(
                         child: Text(
@@ -100,7 +100,7 @@ class Navbar extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: DesignSystem.whiteteal,
+                        color: DesignSystem.whiteTeal,
                       ),
                     ),
                     const Spacer(),
@@ -109,7 +109,7 @@ class Navbar extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: DesignSystem.whiteteal,
+                        color: DesignSystem.whiteTeal,
                       ),
                     ),
                     const Spacer(),
@@ -118,7 +118,7 @@ class Navbar extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: DesignSystem.whiteteal,
+                        color: DesignSystem.whiteTeal,
                       ),
                     ),
 
@@ -136,7 +136,7 @@ class Navbar extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.circle,
-                          color: DesignSystem.whiteteal,
+                          color: DesignSystem.whiteTeal,
                           size: 10,
                         ),
                       ),
@@ -154,7 +154,7 @@ class Navbar extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.circle,
-                          color: DesignSystem.whiteteal,
+                          color: DesignSystem.whiteTeal,
                           size: 10,
                         ),
                       ),
@@ -172,7 +172,7 @@ class Navbar extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.circle,
-                          color: DesignSystem.whiteteal,
+                          color: DesignSystem.whiteTeal,
                           size: 10,
                         ),
                       ),

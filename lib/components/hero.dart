@@ -68,7 +68,7 @@ class HeroComp extends StatelessWidget {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: DesignSystem.whiteteal,
+                              color: DesignSystem.whiteTeal,
                               width: 3,
                             ),
                           ),
@@ -134,7 +134,7 @@ class HeroComp extends StatelessWidget {
                             radius: 15,
                             child: Icon(
                               Icons.send,
-                              color: DesignSystem.whiteteal,
+                              color: DesignSystem.whiteTeal,
                               size: 13,
                             ),
                           ),

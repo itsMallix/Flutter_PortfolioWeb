@@ -5,7 +5,7 @@ class DesignSystem {
   static const Color darkTeal = Color(0xff004443);
   static const Color normalTeal = Color(0xff01615f);
   static const Color lightTeal = Color(0xff188f8b);
-  static const Color whiteteal = Color(0xfff0fdfa);
+  static const Color whiteTeal = Color(0xfff0fdfa);
   static const Color fadeTeal = Color(0xffccfbf1);
 
   static const Color darkGray = Color(0xff374151);
