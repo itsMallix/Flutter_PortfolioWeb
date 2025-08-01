@@ -74,7 +74,7 @@ class Navbar extends StatelessWidget {
                       width: 5,
                       height: 100,
                       decoration: BoxDecoration(
-                        color: DesignSystem.darkGray,
+                        color: DesignSystem.darkTeal,
                       ),
                     ),
                     Container(
@@ -100,7 +100,7 @@ class Navbar extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: DesignSystem.darkTeal,
+                        color: DesignSystem.whiteteal,
                       ),
                     ),
                     const Spacer(),
@@ -109,7 +109,7 @@ class Navbar extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: DesignSystem.darkTeal,
+                        color: DesignSystem.whiteteal,
                       ),
                     ),
                     const Spacer(),
@@ -118,7 +118,7 @@ class Navbar extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: DesignSystem.darkTeal,
+                        color: DesignSystem.whiteteal,
                       ),
                     ),
 
