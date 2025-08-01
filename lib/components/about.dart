@@ -30,7 +30,7 @@ class AboutComp extends StatelessWidget {
                 fontFamily: "Impact",
                 fontSize: 40,
                 height: 2,
-                color: DesignSystem.darkTeal,
+                color: DesignSystem.lightTeal,
               ),
               textAlign: TextAlign.start,
             ),
@@ -52,6 +52,7 @@ class AboutComp extends StatelessWidget {
                 // const SizedBox(width: 10),
                 // const Spacer(),
                 Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 18),
                   width: MediaQuery.of(context).size.width * 0.6,
                   height: MediaQuery.of(context).size.height * 0.6,
                   decoration: BoxDecoration(

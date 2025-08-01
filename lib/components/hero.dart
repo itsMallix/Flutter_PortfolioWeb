@@ -120,7 +120,7 @@ class HeroComp extends StatelessWidget {
                               style: GoogleFonts.fredoka(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w500,
-                                color: DesignSystem.darkTeal,
+                                color: DesignSystem.lightTeal,
                               ),
                             ),
                           ],

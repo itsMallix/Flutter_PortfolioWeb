@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/components/about.dart';
 import 'package:flutter_portfolio/components/hero.dart';
 import 'package:flutter_portfolio/components/navbar.dart';
+import 'package:flutter_portfolio/components/project.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
 
 class ScreenHome extends StatelessWidget {
@@ -29,6 +30,10 @@ class ScreenHome extends StatelessWidget {
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(color: DesignSystem.whiteTeal),
                 child: AboutComp(),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24),
+                child: ProjectComp(),
               ),
             ],
           ),

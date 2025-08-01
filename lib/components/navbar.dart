@@ -99,7 +99,7 @@ class Navbar extends StatelessWidget {
                       "ABOUT",
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                         color: DesignSystem.whiteTeal,
                       ),
                     ),
@@ -108,7 +108,7 @@ class Navbar extends StatelessWidget {
                       "SKILLS",
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                         color: DesignSystem.whiteTeal,
                       ),
                     ),
@@ -117,7 +117,7 @@ class Navbar extends StatelessWidget {
                       "PROJECT",
                       style: GoogleFonts.fredoka(
                         fontSize: 22,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                         color: DesignSystem.whiteTeal,
                       ),
                     ),
