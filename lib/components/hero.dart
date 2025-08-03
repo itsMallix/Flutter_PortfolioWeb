@@ -60,6 +60,7 @@ class HeroComp extends StatelessWidget {
                             color: Colors.white,
                             fontWeight: FontWeight.normal,
                           ),
+                          textAlign: TextAlign.end,
                         ),
                         const SizedBox(width: 15),
                         Container(
@@ -140,6 +141,12 @@ class HeroComp extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  // const SizedBox(height: 225),
+                  SafeArea(
+                    child: SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.15,
                     ),
                   ),
                 ],

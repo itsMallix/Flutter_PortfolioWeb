@@ -16,7 +16,7 @@ class Navbar extends StatelessWidget {
             decoration: BoxDecoration(
               color: DesignSystem.lightTeal,
               border: Border.all(
-                color: DesignSystem.darkTeal,
+                color: DesignSystem.darkTeal.withValues(alpha: 0.5),
                 width: 4,
               ),
               borderRadius: BorderRadius.all(
@@ -74,23 +74,26 @@ class Navbar extends StatelessWidget {
                       width: 5,
                       height: 100,
                       decoration: BoxDecoration(
-                        color: DesignSystem.darkTeal,
+                        color: DesignSystem.darkTeal.withValues(alpha: 0.5),
                       ),
                     ),
                     Container(
-                      width: 150,
+                      padding: const EdgeInsets.all(24),
+                      width: 250,
                       height: 100,
                       decoration: BoxDecoration(
                         color: DesignSystem.whiteTeal,
                       ),
-                      child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 18),
                         child: Text(
-                          "AMANDA \nMAULANA",
-                          style: GoogleFonts.fredoka(
-                            color: DesignSystem.darkTeal,
+                          "A M A N D A \nM A U L A N A",
+                          style: GoogleFonts.poppins(
+                            color: DesignSystem.lightTeal,
                             // fontSize: 22,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.bold,
                           ),
+                          textAlign: TextAlign.start,
                         ),
                       ),
                     ),
@@ -187,7 +190,8 @@ class Navbar extends StatelessWidget {
                     height: 40,
                     width: 40,
                     decoration: BoxDecoration(
-                      color: DesignSystem.darkTeal,
+                      borderRadius: BorderRadius.circular(5),
+                      color: DesignSystem.lightTeal,
                     ),
                     child: Text(
                       "AM",
