@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/components/about.dart';
+import 'package:flutter_portfolio/components/experience.dart';
 import 'package:flutter_portfolio/components/hero.dart';
 import 'package:flutter_portfolio/components/navbar.dart';
 import 'package:flutter_portfolio/components/project.dart';
+import 'package:flutter_portfolio/components/skill.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
 
 class ScreenHome extends StatelessWidget {
@@ -34,6 +36,14 @@ class ScreenHome extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(24),
                 child: ProjectComp(),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24),
+                child: ExperienceComp(),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24),
+                child: SkillComp(),
               ),
             ],
           ),

@@ -12,8 +12,8 @@ class ProjectComp extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(18),
-            // height: MediaQuery.of(context).size.height * 0.65,
+            padding: const EdgeInsets.all(24),
+            height: MediaQuery.of(context).size.height * 0.75,
             width: MediaQuery.of(context).size.width * 0.25,
             decoration: BoxDecoration(
               color: DesignSystem.darkTeal.withAlpha(70),
