@@ -48,12 +48,13 @@ class AboutComp extends StatelessWidget {
                     color: DesignSystem.lightGray,
                     borderRadius: BorderRadius.circular(15),
                   ),
+                  child: Text("Pasfoto"),
                 ),
-                // const SizedBox(width: 10),
+                const SizedBox(width: 10),
                 // const Spacer(),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 18),
-                  width: MediaQuery.of(context).size.width * 0.6,
+                  width: MediaQuery.of(context).size.width * 0.5,
                   height: MediaQuery.of(context).size.height * 0.6,
                   decoration: BoxDecoration(
                     color: DesignSystem.darkGray,
