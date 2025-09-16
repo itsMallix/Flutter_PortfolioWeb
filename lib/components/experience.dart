@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
+import 'package:flutter_portfolio/model/modelEducation.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ExperienceComp extends StatelessWidget {
@@ -9,7 +10,7 @@ class ExperienceComp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
-      height: MediaQuery.of(context).size.height * 0.65,
+      height: MediaQuery.of(context).size.height * 0.5,
       decoration: BoxDecoration(
         // color: DesignSystem.fadeTeal,
       ),
@@ -41,36 +42,34 @@ class ExperienceComp extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text(
-                  "Education",
-                  style: GoogleFonts.fredoka(
-                    fontSize: 16,
-                    color: DesignSystem.fadeTeal,
-                    fontWeight: FontWeight.w500,
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.07,
+                  child: Center(
+                    child: Text(
+                      "Education",
+                      style: GoogleFonts.fredoka(
+                        fontSize: 16,
+                        color: DesignSystem.fadeTeal,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
                   ),
                 ),
                 VerticalDivider(
                   color: DesignSystem.normalTeal.withAlpha(95),
                   thickness: 3,
                 ),
-                Text(
-                  "Awards",
-                  style: GoogleFonts.fredoka(
-                    fontSize: 16,
-                    color: DesignSystem.fadeTeal,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                VerticalDivider(
-                  color: DesignSystem.normalTeal.withAlpha(95),
-                  thickness: 3,
-                ),
-                Text(
-                  "Experience",
-                  style: GoogleFonts.fredoka(
-                    fontSize: 16,
-                    color: DesignSystem.fadeTeal,
-                    fontWeight: FontWeight.w500,
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.07,
+                  child: Center(
+                    child: Text(
+                      "Experience",
+                      style: GoogleFonts.fredoka(
+                        fontSize: 16,
+                        color: DesignSystem.fadeTeal,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -78,10 +77,11 @@ class ExperienceComp extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           ListView.builder(
-            itemCount: 3,
+            itemCount: educationList.length,
             shrinkWrap: true,
             scrollDirection: Axis.vertical,
             itemBuilder: (context, index) {
+              final educations = educationList[index];
               return Container(
                 margin: const EdgeInsetsDirectional.symmetric(vertical: 8.0),
                 padding: const EdgeInsets.all(14),
@@ -98,69 +98,107 @@ class ExperienceComp extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Text(
-                      "2021-2025",
-                      style: GoogleFonts.poppins(
-                        fontSize: 14,
-                        color: DesignSystem.whiteTeal,
-                        fontWeight: FontWeight.w500,
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.05,
+                      child: Text(
+                        "${educations.yearStart} - ${educations.yearEnd}",
+                        style: GoogleFonts.poppins(
+                          fontSize: 14,
+                          color: DesignSystem.whiteTeal,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.circle,
+                            size: 50,
+                            color: DesignSystem.whiteTeal,
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            educations.name,
+                            style: GoogleFonts.poppins(
+                              fontSize: 24,
+                              color: DesignSystem.whiteTeal,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.05,
                     ),
-                    Icon(
-                      Icons.circle,
-                      size: 50,
-                      color: DesignSystem.whiteTeal,
-                    ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.02,
-                    ),
-                    Text(
-                      "Universitas Jember",
-                      style: GoogleFonts.poppins(
-                        fontSize: 24,
-                        color: DesignSystem.whiteTeal,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.05,
-                    ),
-                    Icon(
-                      Icons.circle,
-                      size: 50,
-                      color: DesignSystem.whiteTeal,
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.02,
-                    ),
-                    Text(
-                      "Tegalboto, Jember, Jawa Timur",
-                      style: GoogleFonts.poppins(
-                        fontSize: 14,
-                        color: DesignSystem.whiteTeal,
-                        fontWeight: FontWeight.w500,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.circle,
+                            size: 50,
+                            color: DesignSystem.whiteTeal,
+                          ),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.02,
+                          ),
+                          Text(
+                            educations.place,
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              color: DesignSystem.whiteTeal,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.02,
                     ),
-                    Icon(
-                      Icons.circle,
-                      size: 50,
-                      color: DesignSystem.whiteTeal,
-                    ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.02,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.circle,
+                            size: 50,
+                            color: DesignSystem.whiteTeal,
+                          ),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.02,
+                          ),
+                          Text(
+                            educations.degree,
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              color: DesignSystem.whiteTeal,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    Text(
-                      "Teknologi Informasi",
-                      style: GoogleFonts.poppins(
-                        fontSize: 14,
+                    const SizedBox(width: 10),
+                    Container(
+                      width: 60,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(8),
+                          bottomRight: Radius.circular(8),
+                        ),
+                      ),
+                      child: Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        size: 15,
                         color: DesignSystem.whiteTeal,
-                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ],

@@ -27,13 +27,20 @@ class SkillComp extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Center(
-                  child: Text(
-                    "Programming",
-                    style: GoogleFonts.fredoka(
-                      fontSize: 16,
-                      color: DesignSystem.whiteTeal,
-                      fontWeight: FontWeight.w500,
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.33,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Programming",
+                      style: GoogleFonts.fredoka(
+                        fontSize: 16,
+                        color: DesignSystem.whiteTeal,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),
@@ -41,13 +48,20 @@ class SkillComp extends StatelessWidget {
                   color: DesignSystem.normalTeal.withAlpha(95),
                   thickness: 3,
                 ),
-                Center(
-                  child: Text(
-                    "Editing",
-                    style: GoogleFonts.fredoka(
-                      fontSize: 16,
-                      color: DesignSystem.whiteTeal,
-                      fontWeight: FontWeight.w500,
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.33,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Editing",
+                      style: GoogleFonts.fredoka(
+                        fontSize: 16,
+                        color: DesignSystem.whiteTeal,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),
@@ -55,26 +69,17 @@ class SkillComp extends StatelessWidget {
             ),
           ),
           SizedBox(height: 15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width * 0.33,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: DesignSystem.normalTeal.withAlpha(95),
-                  borderRadius: BorderRadius.circular(8),
-                ),
+          Container(
+            width: MediaQuery.of(context).size.width * 0.7,
+            height: MediaQuery.of(context).size.height * 0.45,
+            decoration: BoxDecoration(
+              color: DesignSystem.normalTeal.withAlpha(95),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                color: DesignSystem.normalTeal.withAlpha(95),
+                width: 2,
               ),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.33,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: DesignSystem.normalTeal.withAlpha(95),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-            ],
+            ),
           ),
         ],
       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/components/about.dart';
+import 'package:flutter_portfolio/components/awards.dart';
 import 'package:flutter_portfolio/components/experience.dart';
+import 'package:flutter_portfolio/components/footer.dart';
 import 'package:flutter_portfolio/components/hero.dart';
 import 'package:flutter_portfolio/components/navbar.dart';
 import 'package:flutter_portfolio/components/project.dart';
@@ -66,6 +68,10 @@ class ScreenHome extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(24),
+                child: AwardComp(),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24),
                 child: Container(
                   height: 75,
                   width: MediaQuery.of(context).size.width * 0.2,
@@ -90,6 +96,7 @@ class ScreenHome extends StatelessWidget {
                 padding: const EdgeInsets.all(24),
                 child: SkillComp(),
               ),
+              FooterComp(),
             ],
           ),
         ),
