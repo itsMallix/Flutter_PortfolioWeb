@@ -36,7 +36,6 @@ class AboutMobile extends StatelessWidget {
 
           SizedBox(height: 25.h),
 
-          // 🔹 Foto dan Bio (dari horizontal -> vertical)
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -49,18 +48,12 @@ class AboutMobile extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12.r),
                 ),
                 alignment: Alignment.center,
-                child: Text(
-                  "Pasfoto",
-                  style: TextStyle(
-                    color: DesignSystem.darkGray,
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w500,
-                  ),
+                child: Image.asset(
+                  "assets/images/pasfoto.png",
+                  fit: BoxFit.scaleDown,
                 ),
               ),
-
               SizedBox(height: 20.h),
-
               // Biodata / Deskripsi
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
@@ -70,13 +63,13 @@ class AboutMobile extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12.r),
                 ),
                 child: Text(
-                  "my bio",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 14.sp,
+                    fontSize: 12.sp,
                     height: 1.5,
                   ),
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                 ),
               ),
             ],

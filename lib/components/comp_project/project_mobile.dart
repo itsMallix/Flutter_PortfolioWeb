@@ -10,7 +10,7 @@ class ProjectMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 20.h),
+      padding: EdgeInsets.symmetric(horizontal: 16.w),
       child: SizedBox(
         width: double.infinity,
         height: 0.8.sh,
@@ -29,7 +29,6 @@ class ProjectMobile extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // 🔹 Header (nomor & ikon)
                   Row(
                     children: [
                       Text(

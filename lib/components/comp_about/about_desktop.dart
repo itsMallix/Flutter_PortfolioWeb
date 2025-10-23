@@ -50,7 +50,10 @@ class AboutDesktop extends StatelessWidget {
                     color: DesignSystem.lightGray,
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  child: Text("Pasfoto"),
+                  child: Image.asset(
+                    "assets/images/pasfoto.png",
+                    fit: BoxFit.scaleDown,
+                  ),
                 ),
                 const SizedBox(width: 10),
                 // const Spacer(),

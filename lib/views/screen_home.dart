@@ -5,8 +5,8 @@ import 'package:flutter_portfolio/components/comp_exp/experience.dart';
 import 'package:flutter_portfolio/components/footer.dart';
 import 'package:flutter_portfolio/components/comp_hero/hero_main.dart';
 import 'package:flutter_portfolio/components/comp_navbar/navbar_main.dart';
-import 'package:flutter_portfolio/components/comp_project/project.dart';
-import 'package:flutter_portfolio/components/skill.dart';
+import 'package:flutter_portfolio/components/comp_project/project_main.dart';
+import 'package:flutter_portfolio/components/comp_skills/skill_main.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,10 +38,16 @@ class ScreenHome extends StatelessWidget {
                 child: AboutComp(),
               ),
               Padding(
-                padding: const EdgeInsets.all(24),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 30.w,
+                  vertical: 20.h,
+                ),
                 child: Container(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 16.w,
+                    vertical: 8.h,
+                  ),
                   height: 55.h,
-                  width: 200.w,
                   decoration: BoxDecoration(
                     color: DesignSystem.fadeTeal,
                     borderRadius: BorderRadius.circular(12),
@@ -51,12 +57,13 @@ class ScreenHome extends StatelessWidget {
                       fit: BoxFit.scaleDown,
                       child: Text(
                         "LATEST PROJECTS",
-                        style: GoogleFonts.fredoka(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontFamily: "Impact",
+                          fontSize: 28.sp,
                           color: DesignSystem.lightTeal,
-                          fontWeight: FontWeight.w500,
+                          letterSpacing: 1.5,
                         ),
-                        textAlign: TextAlign.center,
+                        textAlign: TextAlign.start,
                       ),
                     ),
                   ),
