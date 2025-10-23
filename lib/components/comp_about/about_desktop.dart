@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
 
-class AboutComp extends StatelessWidget {
-  const AboutComp({super.key});
+class AboutDesktop extends StatelessWidget {
+  const AboutDesktop({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -60,6 +62,7 @@ class AboutComp extends StatelessWidget {
                     color: DesignSystem.darkGray,
                     borderRadius: BorderRadius.circular(15),
                   ),
+                  child: Text("my bio"),
                 ),
               ],
             ),

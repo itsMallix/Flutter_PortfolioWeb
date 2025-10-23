@@ -1,11 +1,11 @@
-class awardModel {
+class AwardModel {
   final String year;
   final String logo;
   final String title;
   final String place;
   final String description;
 
-  awardModel({
+  AwardModel({
     required this.year,
     required this.logo,
     required this.title,

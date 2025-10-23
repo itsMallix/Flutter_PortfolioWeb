@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
-import 'package:flutter_portfolio/model/modelEducation.dart';
+import 'package:flutter_portfolio/model/model_education.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ExperienceComp extends StatelessWidget {
-  const ExperienceComp({super.key});
+class ExperienceDesktop extends StatelessWidget {
+  const ExperienceDesktop({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Navbar extends StatelessWidget {
-  const Navbar({super.key});
+class NavbarDesktop extends StatelessWidget {
+  const NavbarDesktop({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

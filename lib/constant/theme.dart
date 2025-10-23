@@ -24,5 +24,3 @@ class DesignSystem {
     color: Colors.white,
   );
 }
-
-enum EditMode { ADD, UPDATE }
